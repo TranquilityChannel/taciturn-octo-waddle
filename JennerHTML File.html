@@ -3,14 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>NPC_Jenner</title>
-<script type="text/javascript" charset="utf-8" src="jennerSpine.js"></script>
-<script >
-	alert("bunnies"); 
+<!--<script type="text/javascript" charset="utf-8" src="jennerSpine.js"></script>-->
+<script>
+	//var name = prompt("Enter your name:");
+	//alert("hello " + name + "!"); 
 
+	function mainFunction(){
+		var challengeRating = prompt("What is your desired Challenge Rating?")
+		var arrayType = prompt("What is the selected Array Type?")
+		
 
+		function getMainStats(challengeRating, arrayType){
+			var mainStats = {challengeRating:"1", armorClass:"13", touchArmorClass:"12", flatFootedArmorClass:"12", fortitudeSave:"+2", reflexSave:"+2", willSave:"+1", combatManeuverDefense:"14", hitPoints:"16", abilityDC:"10", spellDC:"10"}
 
+			return mainStats;
+		}
 
+		var mainStats = getMainStats(challengeRating, arrayType)
 
+		console.log(getMainStats(challengeRating, arrayType));
+	}
+
+	mainFunction();
 
 
 </script>
